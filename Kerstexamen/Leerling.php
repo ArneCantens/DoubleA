@@ -3,6 +3,8 @@ require_once(__DIR__ . "/Rapport.php");
 class Leerling {
 	private $_voornaam = "";
 	private $_achternaam = "";
+  private $_klas = "";
+  private $_wachtwoord = "";
 	private $_rapport = null;
 
 	public function __construct(string $voornaam, string $achternaam, Rapport $rapport) {

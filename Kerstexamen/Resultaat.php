@@ -1,12 +1,28 @@
 <?php
-
-require_once(__DIR__ . "/ExtraUitleg.php");
 class Resultaat {
-  private $_A = 4;
-  private $_B = 3;
-  private $_C = 2;
-  private $_D = 1;
-  private $_E = 0;
+  private $_letter = "";
+  
+  public function SetLetter() {
+    if ($_resultaat > 90%) {
+      $this._letter = "A";
+    }
+    else if ($_resultaat > 80%) {
+      $this._letter = "B";
+    }
+    else if ($_resultaat > 65%) {
+      $this._letter = "C";
+    }
+    else if ($_resultaat > 50%) {
+      $this._letter = "D";
+    }
+    else {
+      $this._letter = "E";
+    }
+  }
+  
+  public function GetLetter() {
+    return $this->_letter;
+  }
 }
 
 ?>
